@@ -1,16 +1,23 @@
 -- Hi, there!  Thanks for checking out my interview submission :)
 
+-- I coded everything in VS Code, as my home machine is a mac, and VS is discontinued now for mac. 
+
+-- You might need the following to run everything via VS Code
+C# for Visual Studio Code 
+    https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
+.NET 8.0 SDK
+    https://dotnet.microsoft.com/download/dotnet/8.0
+
 -- navigate to the root of the repository checkout
 
 -- if you have not already trusted the dev-certs run the following, via a VS Code terminal
 dotnet dev-certs https --trust
 
--- then start by running the backend .NET Core API project, via a VS Code terminal
-
+-- then start by running the backend API project (.Net8), via a VS Code terminal
 dotnet run --launch-profile https
 
--- NEXT launch the angular front end, via another VS Code terminal
--- navigate to /ui/customer-db
+-- Next you will launch the angular front end
+-- navigate to /ui/customer-db, via another VS Code terminal, and run the following
 npm install
 ng serve -o
 
