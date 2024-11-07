@@ -1,0 +1,6 @@
+@Dynatron_HostAddress = http://localhost:5280
+
+GET {{Dynatron_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,10 @@
+.error {
+    color: red;
+    margin-left: 10px;
+}
+.form-field {
+    margin-bottom: 20px;
+}
+.submit-btn {
+    margin-left: 15px;
+}

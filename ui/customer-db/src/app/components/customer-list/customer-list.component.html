@@ -1,0 +1,13 @@
+<h2>Customers</h2>
+<button type="button" (click)="onAddClick()">Add Customer</button>
+<ag-grid-angular
+   style="width: 100%; height: 400px" 
+   class="ag-theme-quartz"
+   [rowData]="selectableCustomers$ | async"
+   [columnDefs]="colDefs"
+   [defaultColDef]="defaultColDef"
+   [pagination]="true"
+   [autoSizeStrategy]="autoSizeStrategy"
+   [paginationPageSize]="paginationPageSize"
+   [paginationPageSizeSelector]="paginationPageSizeSelector"
+/>
