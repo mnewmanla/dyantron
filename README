@@ -1,11 +1,17 @@
 -- Hi, there!  Thanks for checking out my interview submission :)
 
--- FIRST start by running the backend .NET Core API project, via a VS Code terminal
--- navigate to the root of the /Dynatron folder
+-- navigate to the root of the repository checkout
+
+-- if you have not already trusted the dev-certs run the following, via a VS Code terminal
+dotnet dev-certs https --trust
+
+-- then start by running the backend .NET Core API project, via a VS Code terminal
+
 dotnet run --launch-profile https
 
 -- NEXT launch the angular front end, via another VS Code terminal
--- navigate to /Dynatron/ui/customer-db
+-- navigate to /ui/customer-db
+npm install
 ng serve -o
 
 -- NOW from the opened browser explore the app
