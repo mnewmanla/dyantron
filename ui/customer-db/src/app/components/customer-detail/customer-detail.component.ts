@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CustomerService } from '../../services/customer.service';
 import { Customer } from '../../models/domain/customer';
 import { catchError, take, tap, throwError } from 'rxjs';
@@ -8,7 +8,8 @@ import { FormGroup, Validators, FormBuilder } from "@angular/forms";
 @Component({
   selector: 'app-customer-detail',
   templateUrl: './customer-detail.component.html',
-  styleUrl: './customer-detail.component.css'
+  styleUrl: './customer-detail.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CustomerDetailComponent {
   newCustomId: string = '00000000-0000-0000-0000-000000000000';

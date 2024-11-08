@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CustomerService } from '../../services/customer.service';
 import { Observable } from 'rxjs';
 import { ColDef, SizeColumnsToContentStrategy, SizeColumnsToFitGridStrategy, SizeColumnsToFitProvidedWidthStrategy, ValueFormatterParams } from 'ag-grid-community'; // Column Definition Type Interface
@@ -15,7 +15,8 @@ function dateTimeFormatter(params: ValueFormatterParams) {
 @Component({
   selector: 'app-customer-list',
   templateUrl: './customer-list.component.html',
-  styleUrl: './customer-list.component.css'
+  styleUrl: './customer-list.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CustomerListComponent {
   selectableCustomers$!: Observable<SelectableCustomer[]>;
